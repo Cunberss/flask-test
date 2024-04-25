@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные CPU</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Данные CPU</h2>
+    <button onclick="updateSort('min')">Сортировка Min</button>
+    <button onclick="updateSort('max')">Сортировка Max</button>
+    <button onclick="updateSort('default')">По умолчанию</button>
+
+    <div id="aggregation">
+    <p>Минимальное значение CPU: <span id="min-cpu"></span>%</p>
+    <p>Максимальное значение CPU: <span id="max-cpu"></span>%</p>
+    <p>Среднее значение CPU: <span id="avg-cpu"></span>%</p>
+</div>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CPU Percent</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
