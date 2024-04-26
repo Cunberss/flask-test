@@ -22,7 +22,7 @@
 
 в) Набрать в терминале: systemctl enable cpu_monitor.service
 
-г) Набрать в терминале: sudo systemctl restart имя_сервиса.service
+г) Набрать в терминале: systemctl restart имя_сервиса.service
 
 
 Или запустить обычный процесс python из папки daemon: python3 daemon-script.py --server:ip --port:port
