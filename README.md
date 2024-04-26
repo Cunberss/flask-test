@@ -14,7 +14,7 @@
 ```bash
  systemctl daemon-reload
  systemctl enable cpu_monitor.service
- sudo systemctl restart имя_сервиса.service
+ sudo systemctl restart cpu_monitor.service
 ```
 Или запустить обычный процесс python из папки daemon: 
 `python3 daemon-script.py --server:ip --port:port`
